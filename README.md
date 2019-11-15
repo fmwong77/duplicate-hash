@@ -13,9 +13,13 @@ arr = [1,2,2,3,3,4,5,5,5]
 # arr.inject(Hash.new(0)) {|h,i| h[i] += 1; h }
 
 hash = {}
+
 arr.each do |ele|
+
   hash[ele] ||= 0
+  
   hash[ele] += 1
+  
 end
 
 hash
